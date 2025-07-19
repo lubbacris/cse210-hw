@@ -29,9 +29,14 @@ class Program
                     newEntry._time = DateTime.Now.ToShortTimeString();
                     newEntry._promptText = promptGenerator.GetRandomPrompt();
                     
+                    
                     Console.WriteLine($"Prompt: {newEntry._promptText}");
                     Console.Write("Your response: ");
                     newEntry._entryText = Console.ReadLine();
+
+                    //added prompt to ask for mood to show creativity and exceed requirements
+                    Console.Write("Rate your mood today (1-5): "); 
+                    newEntry._mood = Console.ReadLine();
                     
                     journal.AddEntry(newEntry);
                     break;
