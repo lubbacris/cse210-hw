@@ -21,7 +21,6 @@ class Program
         Console.WriteLine($"{f3.GetFractionString()} = {f3.GetDecimalValue()}");
         Console.WriteLine($"{f4.GetFractionString()} = {f4.GetDecimalValue()}");
 
-        //more test cases
         Console.WriteLine("\nAdditional test cases:");
         Console.WriteLine(new Fraction().GetFractionString());
         Console.WriteLine(new Fraction().GetDecimalValue());
