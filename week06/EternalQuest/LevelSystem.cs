@@ -1,6 +1,6 @@
-// CREATIVE ENHANCEMENT: Level progression system
-// Tracks player level based on total points earned
-// Awards titles at different level milestones
+//Enhancing finctionality to exceed requirements by adding level progression system
+//Track player level based on total points earned
+//Award titles at different level milestones
 public class LevelSystem
 {
     public int CurrentLevel { get; private set; } = 1;
@@ -12,7 +12,7 @@ public class LevelSystem
         int initialLevel = CurrentLevel;
         CurrentExperience += points;
         
-        // Level up every 1000 points
+        //Leveling up every 1000 points
         CurrentLevel = 1 + (CurrentExperience / 1000);
         
         return CurrentLevel - initialLevel;
